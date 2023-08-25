@@ -12,13 +12,7 @@ img{
     height: 50%;
 }
 
-body {
-  background-image: url(https://i.imgur.com/XbRg9D7.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed
-  
-}
+
 
 .container {
   display: flex;
