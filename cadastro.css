@@ -1,129 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
-
-img{
-    margin-top: 30%;
-    width: 50%;
-    height: 50%;
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 80px;
-}
-
-.card {
-  background-color: #ffffff80;
-  padding: 30px;
-  border-radius: 4%;
-  box-shadow: 3px 3px 1px 0px #00000060;
-  width: 400px;
-}
-
-h1{
+h2 {
   text-align: center;
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
   margin-bottom: 20px;
-  color: #000000
 }
-
-.label-float input{
-  width: 100%;
-  padding: 5px 5px;
-  display: inline-block;
-  border: 0;
-  border-bottom: 2px solid #0e0e0e;
-  background-color: transparent;
-  outline: none;
-  min-width: 180px;
+input[type="password"]:invalid, input[type="password"]:invalid + span {
+  color: red;
+}
+input[type="password"]:valid, input[type="password"]:valid + span {
+  color: green;
+}
+a {
+  background-color: #000000;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  float: right;
   font-size: 16px;
-  transition: all .3s ease-out;
-  border-radius: 0;
-  
-}
-
-.label-float{
-  position: relative;
-  padding-top: 13px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-
-
-.label-float label{
-  color: #131313;
-  pointer-event: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 13px;
-  transition: all .3s ease-out;
-}
-
-.label-float input:focus + label,
-.label-float input:valid + label{
-  font-size: 13px;
-  margin-top: 0;
-  color: #030303
-}
-
-button{
-  background-color: transparent;
-  border-color: #000000;
-  color: #272727;
-  padding: 7px;
   font-weight: bold;
-  font-size: 12pt;
-  margin-top: 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  transition: all .4s ease-out;
-}
-
-button:hover{
-  background-color: #a70404;
-  color: #fff;
-}
-
-.justify-center{
   display: flex;
+  align-items: center;
+}
+a:hover {
+  background-color: #45a049;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.field{
+  display: flex;
+  width: 100%;
+  margin: 15px ;
+  align-items: center;
   justify-content: center;
-}
-
-.fa-eye{
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  cursor: pointer;
-  color: #0f0f0f;
-}
-
-#msgError{
+  }
+  .field label, 
+  .field span{
+  padding-left: 10px;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+  
+  }
+  .radiobox label{
+  width: auto;
+  display: inline-block;
   text-align: center;
-  color: #ff0000;
-  background-color: #ffbbbb;
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
-}
-
-#msgSuccess{
-  text-align: center;
-  color: #00bb00;
-  background-color: #bbffbe;
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
-}
-
-
+  margin: 1%;
+  
+  }

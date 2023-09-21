@@ -1,74 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ouvidoria</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="https://eteab.com.br/cms/wp-content/uploads/2019/11/LogoAB-final.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal de Comunicação</title>
+    <link rel="stylesheet" href="cadastro.css">
+
 </head>
 <body>
-    
-</body>
-</html><head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    </head>
-    <link rel="stylesheet" href="cadastro.css">
-    <body>
-    
-    <div class='container'>
-        <div class="row">
-            <div class="col-6">
-               <img src="LogoAB-final.png" alt="" srcset="">
-            </div>
-            <div class="col-4">
-      <div class='card'>
-        <h1> Cadastrar-se</h1>
+    <form>
+        <h2>Cadastre-se</h2>
+        <div class="field radiobox">
+            <input type="radio" name="novidades" id="administração" value="administração" checked><label for="nao">usuario</label>
+            <input type="radio" name="novidades" id="responsavel" value="responsavel" ><label for="nao">responsavel</label>
+        </div>
+        <label for="nome">Nome completo:</label>    
+        <input type="text" id="nome" name="nome" required>
+
+
+        <label for="email">Endereço de email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required>
+
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" required>
+        <span class="error">Sua senha deve conter pelo menos 8 caracteres</span>
+
+
+        <label for="confirma_senha">Confirme sua senha:</label>
+        <input type="password" id="confirma_senha" name="confirma_senha" minlength="8" required>
         
-        <div id='msgError'></div>
-        <div id='msgSuccess'></div>
-                <p id="USE" NAME="USE">Tipo de Usuario</p>
-                <link rel="stylesheet" href="tela.cadastro.css">
-                <p>
-                 Aluno<input type="radio" name="citizenship" /><br />
-	             Responsavel <input type="radio" name="citizenship" /><br />
-                </p>
-                <div class="label-float">
-                  <input type="text" id="nome" placeholder=" " required>
-                  <label id="labelNome" for="nome">Nome Completo</label>
-               </div>
 
-                <div class="label-float">
-                    <input type="text" id="nome" placeholder=" " required>
-                    <label id="labelNome" for="nome">CPF/RM</label>
-                </div>
-                <div class="label-float">
-                   <input type="email" id="usuario" placeholder=" " required>
-                   <label id="labelUsuario" for="usuario">Email</label>
-                </div>
-                
-                <div class="label-float">
-                   <input type="password" id="senha" placeholder=" " required>
-                   <label id="labelSenha" for="senha">Senha</label>
-                   <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
-                   
-                </div>
-    
-                <div class="label-float">
-                   <input type="password" id="confirmSenha" placeholder=" " required>
-                   <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
-                   <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
-                </div>
-                
-                <div class='justify-center'>
-                   <a href="index.html"><button>Cadastrar</button></a>
-                </div>
 
-                <div class='justify-center'>
-                  <a href="login.html"><button>Login</button></a>
-               </div>
-            </div>
-            </div>
-      </div>
-      </div>
-    </body>
+        <a href="/tela inicial.html">Cadastrar</a>
+        <a href="login.html">login</a>
+       
+    </form>
+</body>
+</html

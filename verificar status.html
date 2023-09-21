@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Receber Mensagem</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f0f0f0;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+ 
+
+        .container {
+
+            background-color: #fff;
+
+            padding: 20px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+ 
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+ 
+
+        textarea {
+
+            width: 100%;
+
+            height: 200px;
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            margin-bottom: 10px;
+
+        }
+
+ 
+
+        select {
+
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Suas mensagens</h1>
+
+        <form>
+
+            <div>
+
+                <label for="mensagem1">Mensagem:</label>
+
+                <textarea id="mensagem1" name="mensagem1" readonly required></textarea>
+
+            </div>
+
+            <div>
+
+                <label for="mensagem2">Resposta:</label>
+
+                <textarea id="mensagem2" name="mensagem2" readonly required></textarea>
+
+            </div>
+
+            <div>
+
+                <label for="status">Status:</label>
+
+                <select id="status" name="status">
+
+                    <option value="recebido">Recebido</option>
+
+                    <option value="aguardando">Aguardando Resposta</option>
+
+                    <option value="respondido">Respondido</option>
+                    
+
+                </select>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
