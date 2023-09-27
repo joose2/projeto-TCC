@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="https://eteab.com.br/cms/wp-content/uploads/2019/11/LogoAB-final.png" type="image/png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canal de Comunicação</title>
@@ -12,24 +13,22 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <script src="cadastro.js"></script>
 </head>
 <body>
-    <header>
 
-        <a href="https://eteab.com.br/cms/"target="_blank"><img src="https://eteab.com.br/cms/wp-content/uploads/2019/11/LogoAB-final.png" alt="ETEC AB"></a>
-        <h1>Canal de Comunicação dos alunos da Etec Adolpho Berezin</h1>
-        <nav id="nav">  
-            <ul>
-                <li><a href="tela inicial.html">Inicio</a></li>
-    
-
-    </header>
     <main>
       <div class="login">
-        <h2>Faça login ou cadastre-se agora!</h2>
+        <h2>Faça login ou cadastre-se agora</h2>
+
+
+        <div class="field radiobox">
+          <input type="radio" name="novidades" id="administração" value="administração" checked onchange="test()"><label for="nao">Usuário</label>
+          <input type="radio" name="novidades" id="responsavel" value="responsavel" onchange="test()"><label for="nao">Responsável</label>
+      </div>
           <form method="post" action="" id="escolher"></form>
             <form action="" id="entrar">
-              <label id="rm" for="rm_login">Rm</label>
+              <label id="RM" for="rm_login" >Rm</label>
               <input id="rm_login" class="input" name="rm_login" required="required" type="password" placeholder="ex.12345"/>
               <label id=login for="nome_login">Seu login</label>
               <input  id="nome_login" class="input" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
@@ -37,7 +36,15 @@
               <input id="senha_login" class="input" name="senha_login" required="required" type="password" placeholder="ex. senha" />
             </form>
 
-            <input type="submit" value="Entra"/> 
+            <a class="effect effect-4" href="login administrador.html">
+
+ 
+
+              Voltar
+
+
+
+          </a>
    
           <p class="link">
             Ainda não tem conta?
