@@ -1,8 +1,9 @@
+
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <link rel="icon" href="https://eteab.com.br/cms/wp-content/uploads/2019/11/LogoAB-final.png" type="image/png">
-    <title>Verifique o status</title>
+
 <head>
 
     <meta charset="UTF-8">
@@ -28,6 +29,7 @@
             justify-content: center;
 
             align-items: center;
+            flex-direction: column;
 
             height: 100vh;
 
@@ -44,6 +46,19 @@
             border-radius: 5px;
 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            display: flex;
+            position: relative;
+     
+        }
+
+ 
+
+        .left-column, .right-column {
+
+            flex: 1;
+
+            padding: 10px;
 
         }
 
@@ -85,11 +100,15 @@
 
             border-radius: 5px;
 
-            margin-bottom: 10px;
-
         }
-
-
+        .container{
+            gap: 20px;
+        }
+        .voltar-botao{
+            position: absolute;
+            top: 390px;
+            right: 50px;
+        }
     </style>
 
 </head>
@@ -98,47 +117,67 @@
 
     <div class="container">
 
-        <h1>Suas mensagens</h1>
+        <div class="left-column">
 
-        <form>
+            <h1>Mensagem</h1>
 
-            <div>
+            <form>
 
-                <label for="mensagem1">Mensagem:</label>
+                <div>
 
-                <textarea id="mensagem1" name="mensagem1" readonly required></textarea>
+                    <label for="mensagem">Mensagem:</label>
 
-            </div>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
 
-            <div>
+                </div>
 
-                <label for="mensagem2">Resposta:</label>
+                <div>
 
-                <textarea id="mensagem2" name="mensagem2" readonly required></textarea>
+                    <label for="status">Status:</label>
 
-            </div>
+                    <select id="status" name="status">
 
-            <div>
+                        <option value="recebido">Recebido</option>
 
-                <label for="status">Status:</label>
+                        <option value="aguardando">Aguardando Resposta</option>
 
-                <select id="status" name="status">
+                        <option value="respondido">Respondido</option>
 
-                    <option value="recebido">Recebido</option>
+                    </select>
 
-                    <option value="aguardando">Aguardando Resposta</option>
+                </div>
 
-                    <option value="respondido">Respondido</option>
-                    
+            </form>
 
-                </select>
-                <a href="index.html">Voltar</a>
-            </div>
+        </div>
 
-        </form>
+        <div class="right-column">
 
+            <h1>Resposta</h1>
+
+            <form>
+
+                <div>
+
+                    <label for="resposta">Resposta:</label>
+
+                    <textarea id="resposta" name="resposta" required></textarea>
+                </div>
+                
+                        <div class="voltar-botao">
+                            <a class="voltar" href="index.html">
+                            
+                                Voltar
+                            
+                            
+                            
+                            </a>
+                        </div>
+            </form>
+        </div>
     </div>
 
 </body>
+
 
 </html>

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link rel="stylesheet" href="tela_cadastro.css">
     <link rel="stylesheet" href="cadastro.css">
+
     <script src="cadastro.js"></script>
 
 </head>
@@ -14,7 +16,7 @@
     <form>
         <h2>Cadastre-se ou faça login</h2>
         <div class="field radiobox">
-            <input type="radio" name="novidades" id="administração" value="administração" checked onchange="test()"><label for="nao">Usuário</label>
+            <input type="radio" name="novidades" id="administração" value="administração" checked onchange="test()"><label for="nao">Aluno</label>
             <input type="radio" name="novidades" id="responsavel" value="responsavel" onchange="test()"><label for="nao">Responsável</label>
         </div>
         <label for="nome">Nome completo:</label>    
@@ -38,10 +40,12 @@
         <input type="password" id="confirma_senha" name="confirma_senha" minlength="8" required>
         
 
-
-        <a href="index.html">Cadastrar</a>
-        <a href="login.html">login</a>
-       
+<div class="botoes-cadastro">
+    
+    <a href="login.html">login</a>
+            <a href="index.html">Cadastrar</a>
+    
+</div>
     </form>
 </body>
 </html

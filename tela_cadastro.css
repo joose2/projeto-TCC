@@ -3,6 +3,9 @@ iv:first-of-type {
     align-items: flex-start;
     margin-bottom: 5px;
   }
+  form{
+    height: 600px  ;
+  }
   
   label {
     margin-right: 15px;
@@ -49,4 +52,8 @@ iv:first-of-type {
     outline: 5px solid black;
   }
 
-  
+  .botoes-cadastro{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }

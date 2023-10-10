@@ -80,3 +80,9 @@ a:hover {
   margin: 1%;
   
   }
+
+  .botoes-cadastro{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
